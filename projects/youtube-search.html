@@ -14,18 +14,22 @@
                 margin: 20px;
             }
 
+            h1:hover {
+                opacity: 0.8;
+            }
         </style>
 
         <title>Title</title>
     </head>
     <body>
         <!-- HTML -->
+        <h1>Press <code>crtl</code> and <code>r</code> to reload the page <br> Press <code>crtl</code> and <code>w</code> to exit this page</h1>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <script>
             // JS
             function youTubeSearch () {
-                let youTube = prompt("What are you searching?"); // bitter sweet symphony // length: 3
+                let youTube = prompt("What are you searching?");
                 let splitArray = youTube.split(" ");
                 let completedLink = "https://www.youtube.com/results?search_query="
                 console.log(splitArray);
