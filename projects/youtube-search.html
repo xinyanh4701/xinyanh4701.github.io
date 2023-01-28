@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <style>
+            /* CSS */
+            body {
+                background-color: #7EB8CC;
+                text-align: center;
+                margin: 20px;
+            }
+
+        </style>
+
+        <title>Title</title>
+    </head>
+    <body>
+        <!-- HTML -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // JS
+            function youTubeSearch () {
+                let youTube = prompt("What are you searching?"); // bitter sweet symphony // length: 3
+                let splitArray = youTube.split(" ");
+                let completedLink = "https://www.youtube.com/results?search_query="
+                console.log(splitArray);
+                for (let i = 0; i < splitArray.length - 1; i++) {
+                    completedLink += splitArray[i];
+                    completedLink += "+";
+                }
+                completedLink += splitArray[splitArray.length - 1];
+                window.open(completedLink, "popup")
+            }
+            youTubeSearch();
+
+        </script>
+    </body>
+</html>
