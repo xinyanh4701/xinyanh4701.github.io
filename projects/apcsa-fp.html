@@ -48,7 +48,7 @@
             <p>For 12th grade, I enrolled in APCSA. For the Freedom Project, I had the ability to create anything as long as I got approval. This year, I partnered up with <a href="https://aronl9810.github.io/">Aron</a>. Together we created a player vs. environment first-person shooter game. The purpose of this blog is to show your progress of how I played my role of building that game.
             </p>
             <h3>Reflection</h3>
-            <p>My biggest challenge for the freedom project was making the health bar.</p>
+            <p>My biggest challenge for the Freedom Project was making the health bar. The objective for the health bar is to update the player's health with text inside to show how much health the player has. After finishing the tutorial, I ran the test to see if the health bar was working. Before testing the health bar, I assigned the keys, `z` and `x` to simulate as taking damage and healing the player. During the test, when I pressed the keys, `z` and `x`, the health bar was not adjusting to the player's health. To find if the player's health was updated, I used `Debug.Log()` to show the player's health in the console. The console showed that the player's health was decreasing, but on the frontend, there was no change. There was an error. The issue was there was a `NullReferenceException` error where the `Player GameObject` had no reference to the health bar. This took a while to understand what the `NullReferenceException` error means. After resolving that issue, the health bar was adjusted in the `Radial 360` style. In order for the health bar to function normally, the `Fill Method` should be `Horizontal`. Unfortunately, the health bar is not proportionate to the screen resolution. I testing the game on Free Aspect where the screen size of the game is not adjusted to `Full HD`, `4k`, etc. I had to recreate the health bar with simple looks. There were many instances where I had merge conflicts that made me rebuild the components again because we couldn't understand Unity merge conflict errors. For my next steps for the game, I should make the game more aesthetically pleasing. </p>
             <!-- <h3>Context</h3>
             <p>The "Freedom Project" for SEP11 is all about making any product to showcase what you have learned for the tool you used to help you build the project. The purpose of this blog is to show your progress of how you chose the JavaScript tool, how did you learn your tool effectively, the steps it took to make your actual project, your grows and glows, and the skills you acquired for this project.</p><br>
             <h3>Content</h3>
@@ -59,7 +59,7 @@
             <h3>Takeaways</h3>
             <ul>
                 <li>Always Persevere</li>
-                <li>Always do more research online</li>
+                <li></li>
             </ul>
 
             <a href="#">Preview of the Project</a><br>
